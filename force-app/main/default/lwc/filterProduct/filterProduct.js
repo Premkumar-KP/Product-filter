@@ -148,6 +148,7 @@ export default class filterProduct extends LightningElement {
 
             try {
                 const promises = recordsToInsert.map(inputs => {
+                    
                     return createRecord({ apiName: apiName, fields: inputs })
                         .then(result => {
                             if (result.id) {
