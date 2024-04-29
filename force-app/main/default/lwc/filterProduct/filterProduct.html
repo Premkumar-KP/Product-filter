@@ -1,0 +1,94 @@
+<template>
+
+	<lightning-card variant="Narrow" title="Product Selection" icon-name="standard:product" class="">
+
+		<template lwc:if={showFilterIcon}>
+			<lightning-button-icon icon-name="utility:filterList" variant="border-filled"
+				alternative-text="Show quick filters" slot="actions" onclick={handleClickFilter} disabled={disableIcon}>
+			</lightning-button-icon>
+		</template>
+
+		<template lwc:if={showPillContainer}>
+			<p style="color: red;" class="slds-align_absolute-center"> To remove the selected values, click the 'X' 
+				icon below.</p>
+			<div class="slds-var-p-around_x-small">
+				<lightning-pill-container items={selectedproductValues} onitemremove={handleRemovePillContainer}>
+				</lightning-pill-container>
+			</div>
+		</template>
+
+		<div class="slds-grid">
+			<div class={productTableColumnSize}>
+				<span>
+					<div class="slds-p-horizontal_x-small">
+						<template lwc:if={showProduct}>
+							<lightning-datatable key-field="Id" data={productWithPricebookResponse} columns={columns}
+								onrowselection={getSelectedProduct} default-sort-direction={defaultSortDirection}
+								sorted-direction={sortDirection} sorted-by={sortedBy} onsort={onHandleSort}>
+							</lightning-datatable>
+						</template>
+					</div>
+				</span>
+			</div>
+			<template lwc:if={showFilter}>
+				<div class="slds-col slds-size_3-of-12">
+					<div class="slds-p-horizontal_x-small">
+						<div class="slds-box">
+							<span>
+								<template for:each={fieldSetItemsForFilter} for:item="field">
+									<div key={field.apiName} class="slds-var-p-around_xxx-small">
+										<lightning-input type="text" label={field.label} name={field.apiName}
+											onchange={handleChangeInputs}> </lightning-input>
+									</div>
+								</template>
+								<br>
+								<lightning-button variant="Neutral" label="Cancel" title="Cancel Filters"
+									onclick={handleClickCancelFilter} class="slds-var-p-around_xxx-small">
+								</lightning-button> &nbsp;
+								<lightning-button variant="Neutral" label="Clear All" title="Clear All Filters"
+									onclick={handleClickClearAllFilter} class="slds-var-p-around_xxx-small">
+								</lightning-button> &nbsp;
+								<lightning-button variant="brand" label="Apply" title="applyFilter"
+									onclick={handleClickApplyFilter} class="slds-var-p-around_xxx-small"
+									disabled={disableApply}>
+								</lightning-button>
+								<br>
+							</span>
+						</div>
+					</div>
+				</div>
+			</template>
+		</div>
+
+		<template lwc:if={showConfigurationPage}>
+			<p style="color: red;" class="slds-align_absolute-center"> {noteMessage} </p>
+			<div class="slds-var-p-around_medium">
+				<lightning-datatable key-field="id" data={selectedproductValues} columns={columnsForConfigurationTable}
+					hide-checkbox-column="true" show-row-number-column="true" onrowaction={handleRowActionDelete}
+					onsave={handleClickSave} oncancel={handleClickTableCancel}>
+				</lightning-datatable>
+			</div>
+		</template>
+
+		<div slot="footer" class="slds-grid slds-grid_align-spread">
+
+			<template lwc:if={showBackbutton}>
+				<lightning-button variant="Neutral" label="Back" title="Back" onclick={handleClickBack}
+					class="slds-var-p-around_small slds-text-align_left ">
+				</lightning-button>
+			</template>
+
+			<template lwc:if={showCancelButton}>
+				<lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={handleClickCancel}
+					class="slds-var-p-around_small slds-text-align_left " disabled={disableCancel}>
+				</lightning-button>
+			</template>
+
+			<template lwc:if={showNextbutton}>
+				<lightning-button variant="brand" label="Next" title="Next" onclick={handleClickNext}
+					class="slds-var-p-around_small slds-text-align_right" disabled={disableNext}>
+				</lightning-button>
+			</template>
+		</div>
+	</lightning-card>
+</template>

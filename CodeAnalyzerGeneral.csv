@@ -1,0 +1,3 @@
+"Problem","Severity","File","Line","Column","Rule","Description","URL","Category","Engine"
+"1","1","C:\VSCode\demoPackageCreation\force-app\main\default\classes\ProductController.cls","1","1","files-must-compile","PMDException: Error while parsing C:\VSCode\demoPackageCreation\force-app\main\default\classes\ProductController.cls
+Caused by: net.sourceforge.pmd.lang.ast.ParseException: apex.jorje.services.exception.ParseException: Syntax(error = UnexpectedToken(loc = (64, 24, 390, 392), token = 'AS'))","","Scanner Internal","pmd"

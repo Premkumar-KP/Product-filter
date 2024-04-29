@@ -1,0 +1,89 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "package": "Product Filter By RedFerns Tech",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "versionDescription": "Using this package, the user can filter the product based on fields that are present in the product object. it will support the product creation of the Opportunity Order and Quote line items. "
+    },
+    {
+      "path": "force-app",
+      "package": "Product Filter By RedFerns Tech1",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Using this package, the user can filter the product based on fields that are present in the product object. it will support the product creation of the Opportunity Order and Quote line items. "
+    },
+    {
+      "path": "force-app",
+      "package": "Product Filter By RedFerns Tech2",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Using this package, the user can filter the product based on fields that are present in the product object. it will support the product creation of the Opportunity Order and Quote line items. "
+    },
+    {
+      "path": "force-app",
+      "package": "Product Filter By RedFerns Tech3",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Using this package, the user can filter the product based on fields that are present in the product object. it will support the product creation of the Opportunity Order and Quote line items. "
+    },
+    {
+      "path": "force-app",
+      "package": "Product Filter By RedFerns Tech4",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Using this package, the user can filter the product based on fields that are present in the product object. it will support the product creation of the Opportunity Order and Quote line items. "
+    },
+    {
+      "path": "force-app",
+      "package": "Product Filter",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "Using this package, users can filter products with customizable filter options. Seamlessly integrated into Opportunity, Quote, and Order line items, it simplifies the product selection process. Users can quickly find the products and insert them into line items."
+    }
+  ],
+  "name": "demoPackageCreation",
+  "namespace": "rft_cc",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "Product Filter By RedFerns Tech": "0HoGB000000fxlh0AA",
+    "Product Filter By RedFerns Tech@0.1.0-1": "04tGB000003nWHoYAM",
+    "Product Filter By RedFerns Tech1": "0HoGB000000fxlm0AA",
+    "Product Filter By RedFerns Tech@0.1.0-2": "04tGB000003nWMBYA2",
+    "Product Filter By RedFerns Tech2": "0HoGB000000fxlr0AA",
+    "Product Filter By RedFerns Tech@0.1.0-3": "04tGB000003nWMGYA2",
+    "Product Filter By RedFerns Tech3": "0HoGB000000fxlw0AA",
+    "Product Filter By RedFerns Tech@0.1.0-4": "04tGB000003nWMLYA2",
+    "Product Filter By RedFerns Tech4": "0HoGB000000fxm10AA",
+    "Product Filter By RedFerns Tech@0.1.0-5": "04tGB000003nWUvYAM",
+    "Product Filter By RedFerns Tech@0.1.0-6": "04tGB000003nWV0YAM",
+    "Product Filter By RedFerns Tech@0.1.0-7": "04tGB000003nWV5YAM",
+    "Product Filter By RedFerns Tech@0.1.0-8": "04tGB000003nWVAYA2",
+    "Product Filter By RedFerns Tech@0.1.0-9": "04tGB000003nWVFYA2",
+    "Product Filter By RedFerns Tech@0.1.0-10": "04tGB000003nWVKYA2",
+    "Product Filter": "0Ho2w000000TNqoCAG",
+    "Product Filter@0.1.0-1": "04t2w000009kv3PAAQ",
+    "Product Filter@0.1.0-2": "04tGA000005JFGUYA4",
+    "Product Filter@0.1.0-3": "04tGA000005JFGeYAO",
+    "Product Filter@0.1.0-4": "04tGA000005JFUoYAO",
+    "Product Filter@0.1.0-5": "04tGA000005JFZ1YAO",
+    "Product Filter@0.1.0-6": "04tGA000005JFioYAG",
+    "Product Filter@0.1.0-7": "04tGA000005JG4EYAW",
+    "Product Filter@0.1.0-8": "04tGA000005JG4JYAW",
+    "Product Filter@0.1.0-9": "04tGA000005JG4OYAW",
+    "Product Filter@0.1.0-10": "04tGA000005JHDHYA4",
+    "Product Filter@0.1.0-11": "04tGA000005JHDMYA4",
+    "Product Filter@0.1.0-12": "04tGA000003j1CaYAI",
+    "Product Filter@0.1.0-13": "04tGA000003j1CpYAI",
+    "Product Filter@0.1.0-14": "04tGA000003j1CuYAI",
+    "Product Filter@0.1.0-15": "04tGA000003j1NkYAI"
+  }
+}

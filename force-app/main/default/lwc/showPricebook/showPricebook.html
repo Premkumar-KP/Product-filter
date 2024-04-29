@@ -1,0 +1,25 @@
+<template>
+
+	<lightning-card title="Choose PriceBook">
+
+		<div class="slds-var-p-around_medium">
+			<p align="justify">
+				Select a Price Book to associate. You can add products only from the Price Book
+				you associate with this Record. Changing the Price Book deletes all products from Lineitems.
+			</p>
+		</div>
+
+		<div class="slds-var-p-around_small">
+			<lightning-combobox name="Pricebook" label="Pricebook" options={PricebookPicklistValues}
+				onchange={handleChangeInputs} value={pricebookDefaultValue} required ></lightning-combobox>
+		</div>
+
+		<div class="slds-var-p-around_small">
+			<div class="slds-clearfix">
+				<lightning-button variant="brand" label="Save" class="slds-align_absolute-center" title="Save Pricebook"
+					onclick={handleClickSavePricebook}>
+				</lightning-button>
+			</div>
+		</div>
+	</lightning-card>
+</template>

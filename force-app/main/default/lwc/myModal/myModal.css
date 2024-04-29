@@ -1,0 +1,4 @@
+:host {
+    --slds-c-modal-header-color-background: var(--c-example-red, red);
+    --slds-c-modal-header-text-color: var(--c-example-white, white);
+}

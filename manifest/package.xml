@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ProductController</members>
+        <members>ProductControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>filterProduct</members>
+        <members>myModal</members>
+        <members>showPricebook</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+    
+    <members>Product2</members>
+    <members>OpportunityLineItem</members>
+    <members>QuoteLineItem</members>
+    <members>OrderItem</members>
+    <name>CustomObject</name>
+    </types>
+    <version>59.0</version>
+</Package>
